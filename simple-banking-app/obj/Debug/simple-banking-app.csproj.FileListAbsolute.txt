@@ -5,3 +5,10 @@ C:\Users\TechEvo Computers\Desktop\simple-banking-app\simple-banking-app\bin\Deb
 C:\Users\TechEvo Computers\Desktop\simple-banking-app\simple-banking-app\bin\Debug\simple-banking-app.pdb
 C:\Users\TechEvo Computers\Desktop\simple-banking-app\simple-banking-app\obj\Debug\simple-banking-app.exe
 C:\Users\TechEvo Computers\Desktop\simple-banking-app\simple-banking-app\obj\Debug\simple-banking-app.pdb
+C:\Users\TechEvo Computers\Desktop\Scharp-simple-banking-app\simple-banking-app\bin\Debug\simple-banking-app.exe.config
+C:\Users\TechEvo Computers\Desktop\Scharp-simple-banking-app\simple-banking-app\bin\Debug\simple-banking-app.exe
+C:\Users\TechEvo Computers\Desktop\Scharp-simple-banking-app\simple-banking-app\bin\Debug\simple-banking-app.pdb
+C:\Users\TechEvo Computers\Desktop\Scharp-simple-banking-app\simple-banking-app\obj\Debug\simple-banking-app.csproj.AssemblyReference.cache
+C:\Users\TechEvo Computers\Desktop\Scharp-simple-banking-app\simple-banking-app\obj\Debug\simple-banking-app.csproj.CoreCompileInputs.cache
+C:\Users\TechEvo Computers\Desktop\Scharp-simple-banking-app\simple-banking-app\obj\Debug\simple-banking-app.exe
+C:\Users\TechEvo Computers\Desktop\Scharp-simple-banking-app\simple-banking-app\obj\Debug\simple-banking-app.pdb

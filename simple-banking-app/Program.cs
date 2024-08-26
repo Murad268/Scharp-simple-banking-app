@@ -33,22 +33,50 @@ namespace simple_banking_app
                     switch (action)
                     {
                         case 1:
-                            Console.WriteLine("Çıxarış miqdarını daxil edin");
-                            double withdrawalBalance = Convert.ToDouble(Console.ReadLine());
-                          
-                            if (withdrawalBalance > balance)
+                            Console.WriteLine("Çıxarış miqdarını daxil edin:");
+                            double withdrawalAmount = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("Hansı valyuta ilə çıxarış etmək istəyirsiniz? Mümkün valyutalar: AZN, USD, RUB");
+                            string currency = Convert.ToString(Console.ReadLine());
+
+                       
+                            double rubExchangeRate = 0.0207;
+                            double usdExchangeRate = 1.6970;
+
+                            double withdrawalInAzn = withdrawalAmount;
+
+                            if (currency.ToLower() == "rub")
                             {
-                                Console.WriteLine("Hesabınızda kifayət qədər məbləğ yoxdur");
+                                withdrawalInAzn = withdrawalAmount * rubExchangeRate;
+                            }
+                            else if (currency.ToLower() == "usd")
+                            {
+                                withdrawalInAzn = withdrawalAmount * usdExchangeRate;
+                            }
+                            else if (currency.ToLower() == "azn")
+                            {
+                                withdrawalInAzn = withdrawalInAzn;
+                            }
+                                else
+                            {
+                                Console.WriteLine("Yanlış valyuta");
+                                goto BalanceActions;
+                            }
+
+           
+                            if (withdrawalInAzn > balance)
+                            {
+                                Console.WriteLine("Hesabınızda kifayət qədər məbləğ yoxdur.");
                                 Console.Clear();
                                 goto BalanceActions;
                             }
                             else
                             {
-                                balance -= withdrawalBalance;
-                                Console.WriteLine($"Hesabınızdan çıxarış: {withdrawalBalance} AZN. Qalıq məbləğ {balance}");
+                                balance -= withdrawalInAzn;
+                                Console.WriteLine($"Hesabınızdan çıxarış: {withdrawalAmount} {currency}. Qalıq məbləğ: {balance} AZN.");
                                 Console.Clear();
                                 goto BalanceActions;
                             }
+
 
                         case 2:
                             Console.WriteLine("Mədaxil miqdarını daxil edin");
